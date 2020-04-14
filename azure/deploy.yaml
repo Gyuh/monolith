@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
         - name: monolith
-          image: uesr36devopsacr.azurecr.io/monolith
+          image: uesr36devopsacr.azurecr.io/monolith:$(Build.BuildId)
           ports:
             - containerPort: 8080
